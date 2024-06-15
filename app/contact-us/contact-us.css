@@ -1,0 +1,105 @@
+.contact_us_container {
+	background-color: var(--lightgreen);
+	padding: 10px 50px;
+	margin: 0;
+}
+
+.contact_us_container h2 {
+	text-align: center;
+	/* padding: 20px; */
+	margin-bottom: 40px;
+	color: var(--primaryblue);
+	font-size: 2.3rem;
+	font-family: "Alegreya Sans SC", sans-serif;
+	font-weight: 800;
+}
+
+.contact_us_container > div {
+	display: flex;
+	justify-content: space-between;
+}
+.contact_us_info {
+	width: 40%;
+}
+.contact_us_info ul {
+	list-style-type: none;
+	padding: 0;
+	display: grid;
+	grid-template-rows: 1fr repeat(4, auto);
+	gap: 10px;
+}
+
+.contact_us_info ul li {
+	display: grid;
+	grid-template-columns: auto 1fr;
+	gap: 10px;
+	/* font-family: "Alata", sans-serif; */
+	font-family: "Amaranth", sans-serif;
+}
+
+/* CSS of Company Info */
+.contact_us_info span:first-child {
+	height: 62px;
+	width: 62px;
+	background-color: var(--primaryblue);
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.contact_us_info p {
+	margin-top: 0px;
+}
+.contact_us_info p > h3 {
+	font-family: "Alegreya Sans SC", sans-serif;
+	font-weight: 800;
+	font-size: 1.5rem;
+	margin: 0;
+	color: var(--secondaryblue);
+	/* padding-bottom: 10px; */
+}
+
+.contact_us_info p > span {
+	color: var(--primaryblue);
+}
+.contact_us_info p > span > a {
+	text-decoration: none;
+	color: var(--primaryblue);
+}
+/* CSS for map */
+.contact_us_map {
+	position: relative;
+	width: 45%;
+	height: 400px;
+	margin: 0 auto;
+	background-color: white;
+	border: 2px solid var(--primaryblue);
+	/* border-radius: 8px; */
+	overflow: hidden;
+}
+.contact_us_map > img {
+	position: absolute;
+	z-index: 0;
+	height: 100%;
+	width: 100%;
+	object-fit: contain;
+	filter: blur(3px);
+}
+
+/* Media Query */
+
+@media only screen and (max-width: 768px) {
+	.contact_us_container {
+		padding: 10px;
+	}
+	.contact_us_container > div {
+		flex-direction: column;
+	}
+	.contact_us_info {
+		width: 95%;
+	}
+	.contact_us_map {
+		width: 95%;
+	}
+}
