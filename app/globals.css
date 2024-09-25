@@ -10,23 +10,71 @@
 
 /* General styles */
 body {
-	font-family: Arial, sans-serif;
 	margin: 0;
 	padding: 0;
-	background-color: var(--lightgreen);
+	/* background-color: #e5f9ed; */
 }
 
 .mainHeader {
-	background-color: var(--primaryblue);
-	color: white;
-	padding: 1rem;
-	text-align: center;
+	/* background-color: var(--primaryblue); */
+
+	/* color: white; */
+	border-left: 0.6rem solid var(--primarygreen);
+	padding: 0 1rem;
+	text-align: end;
 	font-family: "Abril Fatface", serif;
+
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 }
+
+.logoDiv {
+	padding-right: 10px;
+	height: 100%;
+	width: 100px;
+}
+.logoDiv > img {
+	width: 100%;
+	height: 100%;
+	mix-blend-mode: multiply;
+	margin: auto;
+}
+.headerContantDiv {
+	flex-grow: 1;
+}
+.headerContantDiv h1,
+p {
+	margin: 0;
+	padding: 0;
+}
+.headerContantDiv h1 {
+	padding-right: 0.5rem;
+	font-size: 3rem;
+	text-transform: uppercase;
+	color: var(--primarygreen);
+}
+.headerContantDiv div {
+	padding-right: 0.5rem;
+	padding-bottom: 0.5rem;
+}
+.headerContantDiv div > p {
+	/* font-family: "Amaranth", sans-serif; */
+	/* font-family: "Alegreya Sans SC", sans-serif; */
+	font-family: "Alata", sans-serif;
+	/* font-family: "Abril Fatface", serif; */
+	font-size: 1rem;
+	color: var(--primaryblue);
+}
+
+/* .headerContantDiv div > p > span {
+	font-weight: 900;
+	color: red;
+} */
 
 .mainNavigation {
 	display: flex;
-	background-color: var(--secondaryblue);
+	background-color: var(--primaryblue);
 	justify-content: center;
 	gap: 20px;
 	font-family: "Alegreya Sans SC", sans-serif;
@@ -34,21 +82,31 @@ body {
 	font-size: 1.3rem;
 }
 
-.mainNavigation a {
-	color: white;
-	text-decoration: none;
+.mainNavigation > div {
 	padding: 1rem 1rem;
-	transition: background-color 0.3s ease;
+	cursor: pointer;
 }
 
-.mainNavigation a:hover {
-	background-color: var(--lightblue);
+.mainNavigation > div > a {
+	transition: background-color 0.3s ease;
+	color: white;
+	text-decoration: none;
+}
+
+.mainNavigation > div:hover > a {
+	/* transition: background-color 0.3s ease; */
+	color: var(--secondarygreen);
+}
+
+.mainNavigation > div:hover {
+	background-color: var(--secondaryblue);
 	color: var(--secondarygreen);
 }
 
 .dropdown {
 	position: relative;
 	display: inline-block;
+	color: white;
 }
 
 .dropdown-content {
@@ -87,4 +145,54 @@ body {
 .content {
 	/* padding: 2rem; */
 	background-color: white;
+}
+
+hr {
+	height: 0.4rem;
+	margin: 0;
+	border: 0;
+	background-color: var(--primarygreen);
+}
+
+footer {
+	background-image: url("../public/footer-background3.png");
+	background-position: center;
+	/* background-repeat: no-repeat; */
+	/* background-size: 50%; */
+	color: white;
+}
+
+.footer {
+	padding: 10px 50px;
+	background-color: rgba(0, 0, 0, 0.4);
+	/* filter: blur(10px); */
+}
+
+.four-piller {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	text-transform: uppercase;
+	gap: 40px;
+}
+
+.four-piller > div {
+	font-size: 1rem;
+	line-height: 2;
+	font-weight: 600;
+}
+
+.four-piller h2 {
+	color: var(--primarygreen);
+	text-decoration: underline;
+	text-decoration-style: double;
+}
+
+.four-piller a {
+	display: block;
+	text-decoration: none;
+	color: white;
+}
+
+.four-piller a:hover {
+	color: var(--secondarygreen);
 }

@@ -1,6 +1,7 @@
 .contact_us_container {
-	background-color: var(--lightgreen);
-	padding: 10px 50px;
+	/* background-color: var(--lightgreen); */
+	/* background-color: #e5f9ed; */
+	padding: 10px 50px 50px 50px;
 	margin: 0;
 }
 
@@ -48,10 +49,10 @@
 	justify-content: center;
 }
 
-.contact_us_info p {
+.contact_us_info div {
 	margin-top: 0px;
 }
-.contact_us_info p > h3 {
+.contact_us_info div > h3 {
 	font-family: "Alegreya Sans SC", sans-serif;
 	font-weight: 800;
 	font-size: 1.5rem;
@@ -60,10 +61,10 @@
 	/* padding-bottom: 10px; */
 }
 
-.contact_us_info p > span {
+.contact_us_info div > span {
 	color: var(--primaryblue);
 }
-.contact_us_info p > span > a {
+.contact_us_info div > span > a {
 	text-decoration: none;
 	color: var(--primaryblue);
 }

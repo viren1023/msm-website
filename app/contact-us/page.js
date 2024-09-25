@@ -25,10 +25,10 @@ export default function ContactUs() {
 									height={iconSize}
 								/>
 							</span>
-							<p>
+							<div>
 								<h3>Company Name:</h3>
 								<span>Mahakali Saw Mill</span>
-							</p>
+							</div>
 						</li>
 						<li>
 							<span>
@@ -39,14 +39,14 @@ export default function ContactUs() {
 									height={iconSize}
 								/>
 							</span>
-							<p>
+							<div>
 								<h3>Address:</h3>
 								<span>
 									64/2, Mahakali Saw mill, Nr. Neal Petroleum,
 									Opp. S.P.RING ROAD BRTS STOP, Odhav,
 									Ahmedabad, Gujarat 382415 India.
 								</span>
-							</p>
+							</div>
 						</li>
 						<li>
 							<span>
@@ -57,14 +57,14 @@ export default function ContactUs() {
 									height={iconSize}
 								/>
 							</span>
-							<p>
+							<div>
 								<h3>Moblie No:</h3>
 								<span>
 									<a href="tel:9427801136">+91 94278-01136</a>
 									<br />
 									<a href="tel:9824044536">+91 98240-44536</a>
 								</span>
-							</p>
+							</div>
 						</li>
 						<li>
 							<span>
@@ -75,14 +75,14 @@ export default function ContactUs() {
 									height={iconSize}
 								/>
 							</span>
-							<p>
+							<div>
 								<h3>E-Mail ID:</h3>
 								<span>
 									<a href="mailto:mahakali.odhav@gamil.com">
 										mahakali.odhav@gmail.com
 									</a>
 								</span>
-							</p>
+							</div>
 						</li>
 					</ul>
 				</div>

@@ -1,0 +1,46 @@
+.pic {
+	height: 500px;
+	background-color: antiquewhite;
+	background-image: url("../public/collage.jpg");
+	background-repeat: repeat;
+	background-size: contain;
+	display: flex;
+}
+
+.pic .background-collage {
+	backdrop-filter: blur(10px); /* Applies blur effect to background */
+	position: relative;
+}
+
+.pic div {
+	height: 100%;
+	width: 100%;
+	backdrop-filter: blur(3px);
+	background-color: rgba(0, 0, 0, 0.20);
+	/* display: inline; */
+}
+
+.description {
+	padding: 1rem;
+	font-size: 2rem;
+}
+
+.description .welcome-para {
+	/* display: inline; */
+	font-size: 3rem;
+	font-weight: bolder;
+	margin: 0;
+	padding: 0;
+	color: var(--primaryblue);
+	text-decoration: underline;
+	text-decoration-color: var(--primarygreen);
+}
+
+.description .company-name {
+	/* display: inline; */
+	font-size: 4rem;
+	margin: 0;
+	padding: 0;
+	color: var(--primaryblue);
+}
+

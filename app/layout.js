@@ -1,4 +1,6 @@
 import Link from "next/link";
+import Image from "next/image";
+import logo from "../public/logo.webp";
 
 import "./globals.css";
 import "./fonts.css";
@@ -13,22 +15,148 @@ export default function RootLayout({ children }) {
 		<html lang="en">
 			<body>
 				<header className="mainHeader">
-					<h1>Mahakali Saw Mill</h1>
+					<div className="logoDiv">
+						<Image src={logo} />
+					</div>
+					<div className="headerContantDiv">
+						<h1>Mahakali Saw Mill</h1>
+						<hr />
+						<div>
+							<p>
+								<strong>
+									ALL KIND OF TIMBER MERCHANT & WOODEN
+									BOXMANUFACTURERS
+								</strong>
+							</p>
+							<p>
+								64/2,Nr. Neal Petroleum, Opp. S.P.RING ROAD BRTS
+								STOP, Odhav, Ahmedabad, Gujarat 382415.
+							</p>
+							<p>
+								<strong>Phone No: </strong>+91 94278-01136, +91
+								98240-44536 <strong> E-Mail ID: </strong>
+								mahakali.odhav@gmail.com
+							</p>
+						</div>
+					</div>
 				</header>
 				<nav className="mainNavigation">
-					<Link href="/">Home</Link>
-					<Link href="/products" className="dropdown">
+					<div>
+						<Link href="/">Home</Link>
+					</div>
+					<div className="dropdown">
 						Our Products
 						<div className="dropdown-content">
 							<Link href="/">Link 1</Link>
 							<Link href="/">Link 2</Link>
 							<Link href="/">Link 3</Link>
 						</div>
-					</Link>
-					<Link href="/contact-us">Contact Us</Link>
-					<Link href="/enquiry">Enquiry</Link>
+					</div>
+					<div>
+						<Link href="/contact-us">Contact Us</Link>
+					</div>
+					<div>
+						<Link href="/enquiry">Enquiry</Link>
+					</div>
 				</nav>
 				<div className="content">{children}</div>
+				<hr />
+				<footer>
+					<div className="footer">
+						<div className="four-piller">
+							<div className="piller-one">
+								<h2 className="first">ABOUT COMPANY</h2>
+								<div className="head1">
+									<img
+										className="logo-pic-2"
+										src="pic/logo.png"
+									/>
+								</div>
+								<p>
+									Our professional team members are very
+									skilled and qualified to manage every case.
+									We are strictly committed to our slogan
+									“Your Satisfaction is Our Goal” by providing
+									our esteemed customers with packaging
+									solutions at competitive prices.
+								</p>
+							</div>
+							<div className="piller-two">
+								<h2>OUR PRODUCTS</h2>
+								<div>
+									<a href="faq">Wooden Box & Pallets</a>
+									<a href="faq">Two Way Wooden Pallets</a>
+									<a href="faq">Four Way Wooden Pallets</a>
+									<a href="faq">Pine Wooden Box & Pallets</a>
+									<a href="faq">Wooden Crate</a>
+									<a href="faq">Machinery Packing Box</a>
+									<a href="faq">Plywood Boxes</a>
+									<a href="faq">
+										Wooden Parcel Boxes & Shipping Box
+									</a>
+									<a href="faq">Oak Wooden Box</a>
+									<a href="faq">
+										Seaworthy Export Type Boxes
+									</a>
+								</div>
+							</div>
+							<div className="piller-three">
+								<h2>OUR SERVICES</h2>
+								<div>
+									<a href="faq">
+										Specialty In Heavy Machineries & Pallets
+										Packing
+									</a>
+									<a href="faq">Ispm 15 Heat Treatment</a>
+									<a href="faq">Fumigation Treatment</a>
+									<a href="faq">
+										Vacuum Packing Box & Pallets
+									</a>
+									<a href="faq">Aluminum Foil</a>
+									<a href="faq">Thermocol Sheet</a>
+									<a href="faq">Silica Gel</a>
+									<a href="faq">Stretch Film Roll</a>
+								</div>
+							</div>
+							<div className="piller-four">
+								<h2>CONTACT INFORMATION</h2>
+								<div>
+									<a href="faq">
+										Plot No. 124, Manharnagar part-1, <br />
+										Nr.Sukhram Chambers, <br />
+										Opp.Khodiyarnagar, NH-8, Bapunagar,{" "}
+										<br />
+										Ahmedabad-380 024.
+									</a>
+									{/* <a href="faq">+91 99253 87961</a> */}
+									{/* <a href="faq">amit@shreesatyanarayan.com</a>
+									<a href="faq">
+										sandeep@shreesatyanarayan.com
+									</a> */}
+									{/* <a href="faq">www.shreesatyanarayan.com</a> */}
+								</div>
+							</div>
+						</div>
+						{/* <h6>
+							Tags : wooden box manufacturer in ahmedabad | euro
+							pallet manufacturers | pharma packaging machinery |
+							wooden crate manufacturers | wooden packing box
+							manufacturer | wooden pallet supplier | wooden
+							packing box manufacturer | shipping box
+							manufacturers | wooden crates suppliers | industrial
+							wooden pallets manufacturer | pallet manufacturers
+							in ahmedabad | export wooden box | plywood wooden
+							box manufacturer | wooden crates export
+						</h6> */}
+					</div>
+
+					{/* <div className="copy">
+						<p>
+							Copyright All Rights Reserved © 2020. Mahakali Saw
+							Mill
+						</p>
+					</div> */}
+				</footer>
 			</body>
 		</html>
 	);
