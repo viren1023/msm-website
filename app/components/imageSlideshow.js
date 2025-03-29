@@ -25,8 +25,8 @@ export function ImageSlideShow() {
     <div className="embla" ref={emblaRef}>
       <div className="embla__container">
         {imageList.map((image, index) => (
-          <div className="embla__slide">
-            <Image src={image}/></div>
+          <div className="embla__slide"  key={index}>
+            <Image src={image} alt="Product Image"/></div>
         ))}
         {/* <div className="embla__slide">Slide 1</div>
         <div className="embla__slide">Slide 2</div>

@@ -73,7 +73,7 @@ export default function RootLayout({children}) {
               <div className="piller-one">
                 <h2 className="first">ABOUT COMPANY</h2>
                 <div className="head1">
-                  <Image className="footor-logo" src={logo} />
+                  <Image className="footor-logo" src={logo} alt="logo"/>
                 </div>
                 <p className="company-moto">
                   At Mahakali Saw Mill, <br />

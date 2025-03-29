@@ -28,7 +28,7 @@ export default function DynamicHeader() {
     <>
       <header className="mainHeader">
         <div className="logoDiv">
-          <Image src={logo} />
+          <Image src={logo} alt="logo"/>
         </div>
         <div className="headerContantDiv">
           <h1>Mahakali Saw Mill</h1>
@@ -69,7 +69,7 @@ export default function DynamicHeader() {
     <>
       <header className="mainHeader">
         <div className="logoDiv">
-          <Image src={logo} />
+          <Image src={logo} alt="logo"/>
         </div>
         <div className="headerContantDiv">
           <h1>Mahakali Saw Mill</h1>
