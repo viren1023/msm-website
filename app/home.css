@@ -1,0 +1,41 @@
+.pic {
+	height: 500px;
+	background-color: antiquewhite;
+	background-image: url("../public/collage.jpg");
+	background-repeat: repeat;
+	background-size: contain;
+	display: flex;
+}
+
+.pic .background-collage {
+	backdrop-filter: blur(10px);
+	position: relative;
+}
+
+.pic div {
+	height: 100%;
+	width: 100%;
+	backdrop-filter: blur(3px);
+	background-color: rgba(0, 0, 0, 0.20);
+}
+
+.description {
+	padding: 3rem 15rem;
+	font-size: 1.5rem;
+}
+.company-name {
+	font-size: 3rem;
+	margin: 0;
+	padding: 0;
+	color: var(--primaryblue);
+}
+
+@media only screen and (max-width: 768px) {
+	.description {
+		padding: 3rem 2rem;
+		font-size: 1rem;
+	}	
+	.company-name {
+		font-size: 2rem;
+	}
+}

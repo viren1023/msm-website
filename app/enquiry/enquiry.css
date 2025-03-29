@@ -1,0 +1,124 @@
+.background-collage {
+    /* height: 100%; */
+	/* width: 100%; */
+    /* background-image: url("../../public/collage.jpg"); */
+	/* position: relative; */
+    /* background-color: var(--lightgreen); */
+
+    /* background-repeat: repeat;
+    background-size: contain;
+    width: max-content;
+    margin: auto; */
+}
+
+#myForm {
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(3px);
+    /* background-image: url("../../public/collage.jpg"); */
+    /* align-items: center; */
+    /* background-color: white; */
+    display: flex;
+    justify-content: center;
+    font-size: 24;
+    margin: 10px auto;
+    padding: 1rem;
+}
+
+
+
+#myForm form div{
+    display: flex;
+    flex-direction: column;
+    margin: 1.5rem 0;
+}
+
+.message {
+    /* background-color: blueviolet; */
+    width: 20rem;
+    flex: 1;
+}
+
+#myForm form {
+    flex: 1;
+}
+
+/* .form_name label{
+    color: black;
+    font-size: 2.5rem;
+} */
+
+#myForm label {
+    color: var(--primaryblue);
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 6px;
+    /* border: 5px red solid; */
+}
+
+#myForm input{
+    /* outline: none; */
+    border-color: var(--primaryblue);
+    /* border-radius: 8px; */
+    height: 3rem;
+    width: 20rem;
+    margin-left: 2rem;
+    font-size: 1.5rem;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 0.2rem 0.5rem ;
+    background-color: var(--lightgreen);
+    /* border-bottom: 3px solid black; */
+}
+
+/* .form_email label{
+    color: black;
+    font-size: 2.5rem;
+} */
+
+/* .form_email input{
+    outline: none;
+    border: none;
+    border-radius: 8px;
+    height: 3rem;
+    width: 20rem;
+    margin-left: 2rem;
+    font-size: 1.5rem;
+    padding: 0.2rem 0.5rem ;
+    border-bottom: 3px solid black;
+} */
+
+/* .form_message label{
+    color: black;
+    font-size: 2rem;
+    margin: 6px;
+
+} */
+
+.form_message textarea{
+    /* outline: none; */
+    border: none;
+    /* border-radius: 8px; */
+    height: 10rem;
+    width: 20rem;
+    /* margin: 3px; */
+    margin-left: 2rem;
+    font-size: 1.5rem;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 0.5rem 0.5rem ;
+    background-color: var(--lightgreen);
+    /* margin: 3px; */
+    /* border-bottom: 3px solid black; */
+}
+
+#submitButton {
+    display: block;
+    margin: auto;
+    font-size: 1.5rem;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    color: var(--primaryblue);
+    /* background-color: var(--); */
+    cursor: pointer;
+    width: 7.5rem;
+    height: 3rem;
+}

@@ -10,45 +10,109 @@
 
 /* General styles */
 body {
-	font-family: Arial, sans-serif;
 	margin: 0;
 	padding: 0;
-	background-color: var(--lightgreen);
+	/* font-size: 1rem;; */
+    font-family: "Alata", sans-serif;
+	/* background-color: #e5f9ed; */
 }
 
 .mainHeader {
-	background-color: var(--primaryblue);
-	color: white;
-	padding: 1rem;
-	text-align: center;
+	/* background-color: var(--primaryblue); */
+
+	/* color: white; */
+	border-left: 0.6rem solid var(--primarygreen);
+	padding: 0 1rem;
+	text-align: end;
 	font-family: "Abril Fatface", serif;
+
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 }
+
+.logoDiv {
+	padding-right: 10px;
+	height: 100%;
+	width: 100px;
+}
+.logoDiv > img {
+	width: 100%;
+	height: 100%;
+	mix-blend-mode: multiply;
+	margin: auto;
+}
+.headerContantDiv {
+	flex-grow: 1;
+}
+.headerContantDiv h1,
+p {
+	margin: 0;
+	padding: 0;
+}
+.headerContantDiv h1 {
+	padding-right: 0.5rem;
+	font-size: 3rem;
+	text-transform: uppercase;
+	color: var(--primarygreen);
+}
+.headerContantDiv div {
+	padding-right: 0.5rem;
+	padding-bottom: 0.5rem;
+}
+.headerContantDiv div > p {
+	/* font-family: "Amaranth", sans-serif; */
+	/* font-family: "Alegreya Sans SC", sans-serif; */
+	font-family: "Alata", sans-serif;
+	/* font-family: "Abril Fatface", serif; */
+	font-size: 1rem;
+	color: var(--primaryblue);
+}
+
+/* .headerContantDiv div > p > span {
+	font-weight: 900;
+	color: red;
+} */
 
 .mainNavigation {
 	display: flex;
-	background-color: var(--secondaryblue);
+	background-color: var(--primaryblue);
 	justify-content: center;
 	gap: 20px;
 	font-family: "Alegreya Sans SC", sans-serif;
 	font-weight: 500;
-	font-size: 1.3rem;
+	font-size: 1.5rem;
 }
 
-.mainNavigation a {
+.mainNavigation > div, .mainNavigation > a {
+	padding: 1rem 1rem;
+	cursor: pointer;
+	text-decoration: none;
+	color: white;
+
+}
+
+.mainNavigation > div > a {
+	transition: background-color 0.3s ease;
 	color: white;
 	text-decoration: none;
-	padding: 1rem 1rem;
-	transition: background-color 0.3s ease;
 }
 
-.mainNavigation a:hover {
-	background-color: var(--lightblue);
+.mainNavigation > div:hover, .mainNavigation > a:hover {
+	background-color: var(--secondaryblue);
 	color: var(--secondarygreen);
 }
+
+.mainNavigation > div:hover > a {
+	/* transition: background-color 0.3s ease; */
+	color: var(--secondarygreen);
+}
+
 
 .dropdown {
 	position: relative;
 	display: inline-block;
+	color: white;
 }
 
 .dropdown-content {
@@ -56,7 +120,7 @@ body {
 	position: absolute;
 	background-color: white;
 	min-width: 160px;
-	transform: translateY(16px) translateX(-16px);
+	transform: translateY(12px) translateX(-12px);
 	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
 	z-index: 1;
 	font-size: 1.1rem;
@@ -86,5 +150,134 @@ body {
 /* Example content style */
 .content {
 	/* padding: 2rem; */
-	background-color: white;
+	/* background-color: white; */
+	background-color: var(--lightgreen);
+}
+
+hr {
+	height: 0.4rem;
+	margin: 0;
+	border: 0;
+	background-color: var(--primarygreen);
+}
+
+footer {
+	background-image: url("../public/footer-background3.png");
+	background-position: center;
+	color: white;
+}
+
+.footer {
+	padding: 80px 50px;
+	background-color: rgba(0, 0, 0, 0.4);
+	/* filter: blur(10px); */
+}
+
+.footor-logo{
+	width: 6rem;
+	height: 6rem;
+}
+
+.four-piller {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	text-transform: uppercase;
+	color: var(--lightgreen);
+	gap: 40px;
+}
+
+.four-piller > div {
+	font-size: 1rem;
+	line-height: 2;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: justify;
+	/* font-weight: 600; */
+}
+
+.four-piller h2 {
+	color: var(--primarygreen);
+	text-decoration: underline;
+	text-decoration-style: double;
+}
+
+.four-piller a {
+	display: block;
+	text-decoration: none;
+	color: white;
+}
+
+.four-piller a:hover {
+	color: var(--secondarygreen);
+	background-color: transparent;
+}
+
+.title-underline {
+	margin: 0px 44% 7rem 44%;
+}
+
+/* .company-moto {
+	text-align: justify;
+	color: ;
+} */
+
+@media only screen and (max-width: 768px) {
+
+	.four-piller {
+		display: flex;
+		flex-direction: column;
+	}
+	.company-moto {
+		text-align: left;
+		color: --var(lightgreen);
+	}
+	.title-underline {
+		margin: 0px 20% 3rem 20%;
+	}
+	.mainHeader {
+		border-left: 1rem solid var(--primarygreen);
+		display: flex;
+		flex-direction: row;
+		justify-content: baseline;
+		text-align: center;
+		align-items: center;
+		user-select: none;
+		-webkit-user-select: none;
+		-ms-user-select: none;
+	}
+	.logoDiv {
+		padding-right: 0px;
+	}
+	.headerContantDiv h1 {
+		padding-right: 0rem;
+		font-size: 1.9rem;
+	}
+	.mainNavigation {
+		user-select: none;
+    	-webkit-user-select: none;
+    	-ms-user-select: none;
+		display: flex;
+		position: sticky;
+		top: 0px;
+		z-index: 999;
+		font-weight: 500;
+		font-size: 1rem;
+	}
+	
+	.mainNavigation > div, .mainNavigation > a {
+		padding: 10px 5px;
+	}
+	.dropdown {
+		position: relative;
+		display: inline-block;
+		color: white;
+	}
+	.dropdown-content {
+		transform: translateY(10px) translateX(-5px);
+		font-size: 1rem;
+	}
+	.dropdown-content a {
+		padding: 10px;
+	}
 }

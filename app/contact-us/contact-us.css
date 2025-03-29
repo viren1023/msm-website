@@ -1,17 +1,16 @@
 .contact_us_container {
-	background-color: var(--lightgreen);
-	padding: 10px 50px;
+	padding: 10px 50px 50px 50px;
 	margin: 0;
 }
 
 .contact_us_container h2 {
 	text-align: center;
 	/* padding: 20px; */
-	margin-bottom: 40px;
+	margin: 0px;
 	color: var(--primaryblue);
-	font-size: 2.3rem;
+	font-size: 4rem;
 	font-family: "Alegreya Sans SC", sans-serif;
-	font-weight: 800;
+	/* font-weight: 800; */
 }
 
 .contact_us_container > div {
@@ -26,7 +25,7 @@
 	padding: 0;
 	display: grid;
 	grid-template-rows: 1fr repeat(4, auto);
-	gap: 10px;
+	gap: 2rem;
 }
 
 .contact_us_info ul li {
@@ -35,6 +34,13 @@
 	gap: 10px;
 	/* font-family: "Alata", sans-serif; */
 	font-family: "Amaranth", sans-serif;
+}
+
+.contact_us_info ul li div{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	/* align-items: center; */
 }
 
 /* CSS of Company Info */
@@ -48,22 +54,23 @@
 	justify-content: center;
 }
 
-.contact_us_info p {
+.contact_us_info div {
 	margin-top: 0px;
 }
-.contact_us_info p > h3 {
+.contact_us_info div > h3 {
 	font-family: "Alegreya Sans SC", sans-serif;
 	font-weight: 800;
-	font-size: 1.5rem;
+	font-size: 1.75rem;
 	margin: 0;
 	color: var(--secondaryblue);
+	text-decoration: underline;
 	/* padding-bottom: 10px; */
 }
 
-.contact_us_info p > span {
+.contact_us_info div > span {
 	color: var(--primaryblue);
 }
-.contact_us_info p > span > a {
+.contact_us_info div > span > a {
 	text-decoration: none;
 	color: var(--primaryblue);
 }
@@ -93,13 +100,25 @@
 	.contact_us_container {
 		padding: 10px;
 	}
+	.contact_us_container h2 {
+		font-size: 3rem;
+	}
 	.contact_us_container > div {
-		flex-direction: column;
+		flex-direction: column-reverse;
+		gap: 2rem;
 	}
 	.contact_us_info {
 		width: 95%;
+		margin: auto;
+		user-select: auto;
+  		-webkit-user-select: auto; /* For Safari */
+  		-ms-user-select: auto;
+		/* padding: 0px 5rem; */
+
 	}
 	.contact_us_map {
+		margin: auto;
 		width: 95%;
+		/* padding: 0px 5rem; */
 	}
 }
